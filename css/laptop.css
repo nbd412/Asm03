@@ -473,6 +473,11 @@ div .point span {
 
 /* PROJECT */
 
+#project .container a {
+  text-decoration: none;
+  color: #000;
+}
+
 #project .container h1 {
   padding: 20px 0;
 }
@@ -483,26 +488,26 @@ div .point span {
   column-gap: 5%;
 }
 
-#project .container div img {
+#project .container a img {
   width: 100%;
   padding: 0;
   border-bottom: 1px solid rgb(234,234,234);
 }
 
-#project .project-content div div {
+#project .project-content a div {
   padding: 16px;
 }
 
-#project .project-content div div h1 {
+#project .project-content a div h1 {
   padding: 0;
   font-size: 22px;
 }
 
-#project .project-content div div span {
+#project .project-content a div span {
   margin-right: 20px;
 }
 
-#project .project-content div div span i {
+#project .project-content a div span i {
   margin-right: 6px;
 }
 

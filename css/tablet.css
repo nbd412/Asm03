@@ -97,7 +97,7 @@
   
   /* PROJECT */
 
-  #project .project-content div div span {
+  #project .project-content a div span {
     margin: 0;
   }
 }
