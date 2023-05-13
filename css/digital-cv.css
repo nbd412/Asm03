@@ -1,0 +1,128 @@
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+.element {
+  @include clearfix;
+}
+
+h1 {
+  padding-bottom: 0.5em;
+}
+
+.digital-cv-content {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.row {
+  --bs-gutter-x: 0;
+}
+
+.digital-cv-content {
+  border: 1em solid #0000ff;
+}
+
+.digital-cv-content div {
+  background-color: #f0f8ff;
+}
+
+.digital-cv-content h1 {
+  color: #1325ff;
+  border-bottom: 1px solid #bfd0cc;
+}
+
+.bd-b-r {
+  border-bottom: 1em solid #0000ff;
+  border-right: 1em solid #0000ff;
+}
+
+.bd-r {
+  border-right: 1em solid #0000ff;
+}
+
+svg {
+  width: 2em;
+  height: 2em;
+}
+
+.goals-icon {
+  width: 7em;
+  height: 5em;
+  padding: 1em 2.5em;
+}
+
+
+.timeline-number span {
+  font-size: 2em;
+  margin-top: 0.09375em;
+  color: #fff;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: #9e88ff;
+  border: 1px solid #000;
+}
+
+.bd-timeline {
+  border-bottom: 2px dotted #a3dbe1;
+  width: 70%;
+}
+
+@media only screen and (max-width: 992px) {
+  .container,
+  .goals,
+  .team,
+  .scopes,
+  .primary,
+  .timeline {
+    width: 100%;
+  }
+
+  .goals,
+  .scopes,
+  .primary {
+    border-bottom: 1em solid #0000ff;
+    border-right: 0;
+  }
+
+  .team {
+    border-right: 0;
+  }
+
+  .scopes-content-detail {
+    padding: 0 0.5em !important;
+  }
+
+  .bd-timeline {
+    width: 100%;
+  }
+
+  .timeline-number {
+    margin: 0 !important;
+  }
+  
+  .primary-icon,
+  .team-icon {
+    text-align: center;
+  }
+
+  .goals-icon {
+    margin: auto !important;
+    height: 3em;
+  }
+
+  .pe-5 {
+    padding: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .scopes-content {
+    display: block !important;
+  }
+}

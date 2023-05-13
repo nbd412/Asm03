@@ -1,0 +1,88 @@
+@media only screen and (max-width: 576px) {
+  html {
+    overflow-x:hidden
+  }
+  
+  body {
+    max-width: 100%;
+  }
+  
+  .hidden {
+    display: block;
+  }
+  
+  .mg-right {
+    padding-left: 34px;
+  }
+
+  /* NAV-BAR */
+
+  #nav-bar .container a {
+    display: block;
+    text-align: center;
+  }
+
+  #nav-bar .container a:nth-child(2) {
+    border-right: 0;
+    margin-right: 0;
+  }
+
+  /* BANNER */
+
+  #banner div span {
+    top: 46%;
+    text-align: center;
+  }
+
+  /* ABOUT */
+
+  #about .container {
+   display: block;
+  }
+
+  #target {
+    padding: 40px 40px;
+  }
+
+  #personal-info {
+    padding: 40px 40px;
+  }
+
+  /* CERTIFICATE */
+
+  #certificate .container div {
+    display: block;
+  }
+
+  #certificate .container div:nth-child(1)::after {
+    border: 0;
+  }
+
+
+  /* PROJECT */
+
+  #project .container .project-content {
+    display: block;
+  }
+
+  #project .container .project-content .bd-section {
+    margin-top: 30px;
+  }
+  
+  /* JOB-INFO */
+
+  #job-info .container {
+    display: block;
+  }
+
+  #job-info .container .grid-column-content {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  /* FOOTER */
+
+  #footer .container ul li p {
+    display: none;
+  }
+}
