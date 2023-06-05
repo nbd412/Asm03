@@ -20,10 +20,12 @@ function submitEmail() {
   const form = document.querySelector('#form');
   const emailValue = document.querySelector('#email').value;
   const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  if (emailValue.match(regex)) {
+  console.log(emailValue)
+  if(emailValue.length === 0) {
+    document.getElementById('text').innerHTML = 'Email không được để trống!';
+  } else if (emailValue.match(regex)) {
     showPersonalInfo.classList.remove('hidden-info');
     form.classList.add('hidden-info');
-    console.log(emailValue);
   } else {
     document.getElementById('text').innerHTML = 'Email không đúng định dạng vui lòng nhập lại';
   }
